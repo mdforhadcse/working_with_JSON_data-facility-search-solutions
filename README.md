@@ -46,3 +46,21 @@ def search_facilities(facilities, keyword):
 # Example search for facilities
 keyword = 'Peterborough'
 search_facilities(facilities, keyword)
+
+
+
+
+### Solution 2: Flask Web Application
+
+The second solution is a more advanced web-based application built using Flask. It includes a web interface where users can search for facilities using a keyword. The results are displayed dynamically on the webpage. The user can also select a facility from a dropdown and display its ID.
+
+#### Features:
+- Web UI for searching facilities
+- Search results displayed dynamically on the webpage
+- Dropdown for selecting facilities and displaying the ID
+
+#### Installation and Running the Flask App:
+1. Install Flask: `pip install Flask`
+2. Run the Flask app:
+   ```bash
+   python app.py
