@@ -1,0 +1,294 @@
+[
+    {
+        "Id": 1,
+        "facility": "105 Peterborough St. - Compact Spots 1 or 2"
+    },
+    {
+        "Id": 2,
+        "facility": "1089 Boylston St. - Spot #14, #15, or #16 Only"
+    },
+    {
+        "Id": 3,
+        "facility": "109 Peterborough St. - Compact Spots 10 or 11"
+    },
+    {
+        "Id": 4,
+        "facility": "12 Bay State Rd. - Spot #6, 7, 8 or 9 only"
+    },
+    {
+        "Id": 5,
+        "facility": "12 Stoneholm St. - Spot #13 or 14"
+    },
+    {
+        "Id": 6,
+        "facility": "124 St Mary\u2019s St. - Spot #5 or 6"
+    },
+    {
+        "Id": 7,
+        "facility": "14 Keswick St. - Spot #3 only"
+    },
+    {
+        "Id": 8,
+        "facility": "14 Public Alley 810 (Left Side Only) - 14 Symphony Rd - Parking Spot"
+    },
+    {
+        "Id": 9,
+        "facility": "141 Beacon St. - Left or Right Spot Only"
+    },
+    {
+        "Id": 10,
+        "facility": "15 Follen St. - Spot #14 Only"
+    },
+    {
+        "Id": 11,
+        "facility": "15 Keswick St. - Spot #1 Only"
+    },
+    {
+        "Id": 12,
+        "facility": "15-17 Aberdeen St. - Spots #3 or 6 ONLY"
+    },
+    {
+        "Id": 13,
+        "facility": "16 Westland Ave. - Spot #1 or #2 only"
+    },
+    {
+        "Id": 14,
+        "facility": "17 Symphony Rd - Spot #2"
+    },
+    {
+        "Id": 15,
+        "facility": "175 Saint Botolph St. - Left Spot Only"
+    },
+    {
+        "Id": 16,
+        "facility": "179 St Botolph St. -Right Whole Tandem Spot"
+    },
+    {
+        "Id": 17,
+        "facility": "183 Saint Botolph St. - Spot #1 or 2"
+    },
+    {
+        "Id": 18,
+        "facility": "184 Beacon St. - Alley Spot"
+    },
+    {
+        "Id": 19,
+        "facility": "19 Cumberland St. - Right Whole Tandem Spot Only"
+    },
+    {
+        "Id": 20,
+        "facility": "2 Claremont St - Right Spot"
+    },
+    {
+        "Id": 21,
+        "facility": "23 Symphony Rd. - Spots 1, 2, or 3"
+    },
+    {
+        "Id": 22,
+        "facility": "243 Public Alley 419 - 243 Beacon St - Alley Parking Spot"
+    },
+    {
+        "Id": 23,
+        "facility": "244 Beacon St (244 Back St.) - Parallel Spot"
+    },
+    {
+        "Id": 24,
+        "facility": "250 Newbury St. - Whole Tandem Row - Spot #1 or #2"
+    },
+    {
+        "Id": 25,
+        "facility": "27 Back St. - Spots 1, 2, or 3"
+    },
+    {
+        "Id": 26,
+        "facility": "27 Bay State Rd - Whole Tandem Row - Lot"
+    },
+    {
+        "Id": 27,
+        "facility": "277 Beacon St. - Spot #2"
+    },
+    {
+        "Id": 28,
+        "facility": "28 Public Alley 810 - (28 Symphony Rd) - middle spot"
+    },
+    {
+        "Id": 29,
+        "facility": "28 Public Alley 810 (28 Symphony Rd.) - Spot #3 Only"
+    },
+    {
+        "Id": 30,
+        "facility": "296 Marlborough St. - LEFT Spot Only"
+    },
+    {
+        "Id": 31,
+        "facility": "299 Berkeley St. - Spots #11, 12, 13, 14 or #15 Only"
+    },
+    {
+        "Id": 32,
+        "facility": "3 Claremont St - Left Fence Spot"
+    },
+    {
+        "Id": 33,
+        "facility": "32 Edgerly Rd.- Angle Spot"
+    },
+    {
+        "Id": 34,
+        "facility": "320 Commonwealth Ave. - Whole Tandem Row"
+    },
+    {
+        "Id": 35,
+        "facility": "324 Newbury St. - Alley Spot"
+    },
+    {
+        "Id": 36,
+        "facility": "387 Marlborough St. - Spot #8 only"
+    },
+    {
+        "Id": 37,
+        "facility": "39 Bay State Rd. - Spot #P6 or #P7"
+    },
+    {
+        "Id": 38,
+        "facility": "41- 43 Bay State Rd. - Alley Spots"
+    },
+    {
+        "Id": 39,
+        "facility": "447 Park Drive - Spot #1, 2, 3 or 4 ONLY"
+    },
+    {
+        "Id": 40,
+        "facility": "448 Park Drive - Spot #3"
+    },
+    {
+        "Id": 41,
+        "facility": "451 Park Dr. - Spot #3 or 6 ONLY"
+    },
+    {
+        "Id": 42,
+        "facility": "461 Park Drive - Parallel Spot"
+    },
+    {
+        "Id": 43,
+        "facility": "463 Park Drive - Compact Spot #1"
+    },
+    {
+        "Id": 44,
+        "facility": "463 Park Drive - Parallel Spot #2"
+    },
+    {
+        "Id": 45,
+        "facility": "477 Beacon St. - Right Spot only"
+    },
+    {
+        "Id": 46,
+        "facility": "509 Beacon St. - Left and Right Whole Tandem Row"
+    },
+    {
+        "Id": 47,
+        "facility": "56 Queensberry - Personal Spots #1-4"
+    },
+    {
+        "Id": 48,
+        "facility": "56 St Stephen St- Compact Only Spots"
+    },
+    {
+        "Id": 49,
+        "facility": "61 Park Dr. - Spot G"
+    },
+    {
+        "Id": 50,
+        "facility": "62 Queensberry St. - Spot #1 or #2 only"
+    },
+    {
+        "Id": 51,
+        "facility": "66 Queensberry St. - Spot #1 or #2"
+    },
+    {
+        "Id": 52,
+        "facility": "7 Follen St - Parking Spot P11"
+    },
+    {
+        "Id": 53,
+        "facility": "76 Gainsborough St. - Spot #43"
+    },
+    {
+        "Id": 54,
+        "facility": "76 Gainsborough St. - Spot #47"
+    },
+    {
+        "Id": 55,
+        "facility": "76 Gainsborough St. - Spot #48"
+    },
+    {
+        "Id": 56,
+        "facility": "76 Gainsborough St. - Spot #57"
+    },
+    {
+        "Id": 57,
+        "facility": "76 Gainsborough St. - Spot #8 ONLY"
+    },
+    {
+        "Id": 58,
+        "facility": "76 Gainsborough St. - Spot #85"
+    },
+    {
+        "Id": 59,
+        "facility": "76 Gainsborough St. - Spot 53"
+    },
+    {
+        "Id": 60,
+        "facility": "76 Gainsborough St. - Spots #32, 33, 34, or 35"
+    },
+    {
+        "Id": 61,
+        "facility": "76 Gainsborough St. - Spots #9,10,11,12"
+    },
+    {
+        "Id": 62,
+        "facility": "76-78 St Stephen St. - Whole Tandem Rows"
+    },
+    {
+        "Id": 63,
+        "facility": "78 St Stephen St. - Whole Tandem Row"
+    },
+    {
+        "Id": 64,
+        "facility": "80 Fenway - Angle Parking"
+    },
+    {
+        "Id": 65,
+        "facility": "84 Fenway - Alley Spots"
+    },
+    {
+        "Id": 66,
+        "facility": "84 Fenway - Spot #5 only"
+    },
+    {
+        "Id": 67,
+        "facility": "85 St Botolph St. - Left Whole Tandem Spot"
+    },
+    {
+        "Id": 68,
+        "facility": "86 Saint Stephen St. - Left Whole Tandem Spot"
+    },
+    {
+        "Id": 69,
+        "facility": "869 Beacon St.- Spot #1 or 2"
+    },
+    {
+        "Id": 70,
+        "facility": "877 Beacon St. - Spot #1 Only"
+    },
+    {
+        "Id": 71,
+        "facility": "912 Beacon St - Spot #2 or #4 only"
+    },
+    {
+        "Id": 72,
+        "facility": "922 Beacon St. - Lot"
+    },
+    {
+        "Id": 73,
+        "facility": "923 Beacon St (124 St Mary's St.) - Garage"
+    }
+]

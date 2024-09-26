@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facility Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .search-form {
+            margin-bottom: 20px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search for Facilities</h1>
+
+    <form class="search-form" method="POST" action="/">
+        <label for="keyword">Enter keyword:</label>
+        <input type="text" id="keyword" name="keyword" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results is not none %}
+        <div class="results">
+           <h2>Search Results for "{{ keyword }}":</h2>
+            {% if results %}
+                <p>Found {{ results|length }} results.</p>
+                <ul>
+                    {% for result in results %}
+                        <li><strong>ID:</strong> {{ result['Id'] }} <br><strong>Facility:</strong> {{ result['facility'] }}</li><br>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No results found.</p>
+            {% endif %}
+        </div>
+    {% endif %}
+</body>
+</html>
