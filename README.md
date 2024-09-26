@@ -1,8 +1,6 @@
 # Working With JSON File (facility search solutions)
 A collection of three different approaches to search and display facility data from a JSON file. Solutions include Jupyter Notebook, Flask, and ipywidgets with IPython.display.
 
-# Facility Search Solutions
-
 This repository contains three different solutions for searching and displaying facility data from a `facilities.json` file. Each approach offers a unique method for interacting with the data, ranging from simple terminal-based solutions to more advanced interactive user interfaces.
 
 ## Table of Contents
