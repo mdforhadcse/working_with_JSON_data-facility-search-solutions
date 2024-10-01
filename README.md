@@ -22,7 +22,7 @@ This repository contains three different solutions for searching, extracting and
 
 This is the simplest implementation where we directly search the facility list using Python in a Jupyter Notebook. The solution allows the user to enter a keyword and search the facility names, printing the results (ID and facility name) directly to the console.
 
-<img src="images/solution-1.png">
+![solution 01](images/solution-1.png "solution 01: Jupyter Notebook")
 
 
 #### Code:
