@@ -1,7 +1,7 @@
-# Working With JSON File (facility search solutions)
-A collection of three different approaches to search and display facility data from a JSON file. Solutions include Jupyter Notebook, Flask, and ipywidgets with IPython.display.
+# Search and extract data from JSON data sources ( A example of facility search solutions)
+A collection of three different approaches to search, extract and visualize data ex.facility data from JSON data sources ex.a JSON file. Solutions include simple Jupyter Notebook, Flask, and ipywidgets with IPython.display.
 
-This repository contains three different solutions for searching and displaying facility data from a `facilities.json` file. Each approach offers a unique method for interacting with the data, ranging from simple terminal-based solutions to more advanced interactive user interfaces.
+This repository contains three different solutions for searching, extracting and visualizing data ex.facility data from JSON data sources ex.`facilities.json` file. Each approach offers a unique method for interacting with the data, ranging from simple terminal-based solutions to more advanced interactive user interfaces using Flask and IPython.display.
 
 ## Table of Contents
 
@@ -21,6 +21,9 @@ This repository contains three different solutions for searching and displaying 
 ### Solution 1: Jupyter Notebook
 
 This is the simplest implementation where we directly search the facility list using Python in a Jupyter Notebook. The solution allows the user to enter a keyword and search the facility names, printing the results (ID and facility name) directly to the console.
+
+<img src="images/solution-1.png">
+
 
 #### Code:
 ```python
