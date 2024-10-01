@@ -22,7 +22,8 @@ This repository contains three different solutions for searching, extracting and
 
 This is the simplest implementation where we directly search the facility list using Python in a Jupyter Notebook. The solution allows the user to enter a keyword and search the facility names, printing the results (ID and facility name) directly to the console.
 
-![solution 01](images/solution-1.png "solution 01: Jupyter Notebook")
+#### Image:
+![solution 01](images/solution-1.png "Solution 01: Jupyter Notebook")
 
 
 #### Code:
@@ -59,7 +60,94 @@ The second solution is a more advanced web-based application built using Flask. 
 #### Features:
 - Web UI for searching facilities
 - Search results displayed dynamically on the webpage
-- Dropdown for selecting facilities and displaying the ID
+
+#### Code: [app.py](app.py)
+```python
+# Solution 2: Flask Web Application
+from flask import Flask, render_template, request
+import json
+
+# Load facilities data from the JSON file
+file = 'facilities.json'
+with open(file, 'r') as f:
+    facilities = json.load(f)
+
+# Initialize the Flask application
+app = Flask(__name__)
+
+# Function to search facilities by keyword
+def search_facilities(facilities, keyword):
+    return [facility for facility in facilities if keyword.lower() in facility['facility'].lower()]
+
+# Route for the home page
+@app.route('/', methods=['GET', 'POST'])
+def home():
+    if request.method == 'POST':
+        keyword = request.form.get('keyword')
+        if keyword:
+            results = search_facilities(facilities, keyword)
+            return render_template('index.html', results=results, keyword=keyword)
+    return render_template('index.html', results=None)
+
+# Run the Flask application
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+#### Code: [templates](templates)/[index.html](templates/index.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facility Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*height: 50vh;*/
+            flex-direction: column;
+        }
+        .search-form {
+            margin-bottom: 20px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search for Facilities</h1>
+
+    <form class="search-form" method="POST" action="/">
+        <label for="keyword">Enter keyword:</label>
+        <input type="text" id="keyword" name="keyword" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results is not none %}
+        <div class="results">
+           <h2>Search Results for "{{ keyword }}":</h2>
+            {% if results %}
+                <p>Found {{ results|length }} results.</p>
+                <ul>
+                    {% for result in results %}
+                        <li><strong>ID:</strong> {{ result['Id'] }} <br><strong>Facility:</strong> {{ result['facility'] }}</li><br>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No results found.</p>
+            {% endif %}
+        </div>
+    {% endif %}
+</body>
+</html>
+```
 
 #### Installation and Running the Flask App:
 1. Install Flask: `pip install Flask`
@@ -69,7 +157,14 @@ The second solution is a more advanced web-based application built using Flask. 
     ```
 3.	Visit http://127.0.0.1:5000/ in your browser.
 
+#### Image 01:Simple UI for searching facilities
+![simple_UI_get_data_using_search_keyword.png](images/simple_UI_get_data_using_search_keyword.png)
 
+#### Image 02:Search results displayed dynamically on the webpage
+![When_data_found_with_the_keyword.png](images/When_data_found_with_the_keyword.png)
+
+#### Image 03:No results found for the keyword
+![when_no_data_found_from_search_keyword.png](images/when_no_data_found_from_search_keyword.png)
 
 ### Solution 3: IPython.display and ipywidgets
 
@@ -81,10 +176,13 @@ This solution leverages IPython.display and ipywidgets to create an interactive 
 - Interactive widgets for searching and selecting facilities.
 - Results are dynamically displayed within the notebook environment.
 
+#### Image:
+![solution-3.png](images/solution-3.png)
+
 #### Code:
 This code is divided into two parts:
 
-1. **Core Logic:** This part of the code is written in a separate Python file (facility_search.py).
+1. **Core Logic:** This part of the code is written in a separate Python file [facility_search.py](facility_search.py).
 ```python
 import json
 from IPython.display import display
@@ -175,7 +273,7 @@ def create_facility_ui(facilities):
     # display the widgets
     display(keyword_input, search_button, result_text, result_display, facility_dropdown, select_button, selected_text)
 ```
-2. **Jupyter Notebook:** Only necessary components are loaded and run in the notebook.
+2. **Jupyter Notebook:** Only necessary components are loaded and run in the notebook [facilities.ipynb](facilities.ipynb).
 ```python
 from facility_search import load_facilities, create_facility_ui
 
